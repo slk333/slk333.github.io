@@ -2,7 +2,14 @@ nav a{
     display: inline-block;
 	text-decoration: none;
 	width: 20%;
-	background-color: #ddd;
+	
+	
+}
+nav a:hover{
+
+}
+nav a:first-child{
+
 }
 
 
