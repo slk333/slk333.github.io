@@ -1,3 +1,16 @@
+nav a{
+    display: inline-block;
+	text-decoration: none;
+	width: 20%;
+	background-color: #ddd;
+}
+
+
+
+
+
+
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
