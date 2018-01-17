@@ -1,14 +1,29 @@
 
-
+        
+   
 nav{
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
+background-color:black;
+height:5%;
+z-index:999;
 
+ display: flex;
+    align-items: center;
 
 }
 
-nav a{
+nav div a{
     display: inline-block;
 	text-decoration: none;
 	width: 20%;
+	
+
+	text-align:center;
+
+	
 	
 	
 	
