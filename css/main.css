@@ -6,10 +6,9 @@ position:fixed;
 top:0px;
 left:0px;
 right:0px;
-background-color:black;
 height:50px;
 z-index:999;
-
+background-color:rgb(55,55,57);
 
 }
 
@@ -19,12 +18,21 @@ nav div a{
 	width: 20%;
 	text-align:center;
 	line-height:50px;
-	
-	
+	color:white;
+
 	
 	
 }
+#logo{
+
+  vertical-align: middle;
+  margin-bottom:0.20em;
+
+}
+
 nav a:hover{
+background-color:rgb(83,83,85);
+color:white;
 
 }
 nav a:first-child{
