@@ -1,5 +1,6 @@
 
-        
+body{
+margin:0px;}        
    
 nav{
 position:fixed;
@@ -13,25 +14,29 @@ background-color:rgb(55,55,57);
 }
 
 nav div a{
-    display: inline-block;
-	text-decoration: none;
+ 
+    display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
 	width: 20%;
+	line-height:50px; /* la hauteur de la ligne de texte */
+	
 	text-align:center;
-	line-height:50px;
+	text-decoration: none;
+	font-size: 16px;
+	
 	color:white;
-
-	
-	
 }
+
+
 #logo{
 
   vertical-align: middle;
   margin-bottom:0.20em;
+ /* width:33%; */
 
 }
 
 nav a:hover{
-background-color:rgb(83,83,85);
+background-color:rgb(83,83,85); /* gris plus clair */
 color:white;
 
 }
@@ -39,6 +44,14 @@ nav a:first-child{
 
 }
 
+footer{
+
+background-color:rgb(55,55,57);
+color:white;
+width:100%;
+left:0px;
+right:0px;  /* s'affranchir de la margin de body */
+}
 
 
 
