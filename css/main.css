@@ -44,6 +44,19 @@ nav a:first-child{
 
 }
 
+#roomForNavBar{
+height:50px;
+}
+
+article #mainPhoto{
+margin-top:10px;
+margin-bottom:10px;
+
+}
+
+
+
+
 footer{
 
 background-color:rgb(55,55,57);
@@ -100,7 +113,7 @@ line-height:40px;
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
