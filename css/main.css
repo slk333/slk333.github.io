@@ -49,10 +49,19 @@ footer{
 background-color:rgb(55,55,57);
 color:white;
 width:100%;
-left:0px;
-right:0px;  /* s'affranchir de la margin de body */
 }
 
+#lowerFooter{
+height:40px;
+background-color:rgb(83,83,85)
+}
+
+#lowerFooter .container{
+text-align:center;
+}
+#lowerFooter .container #copyright{
+line-height:40px;
+}
 
 
 
