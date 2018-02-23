@@ -24,33 +24,29 @@ nav div #header-right a{
 	font-size: 16px;
 	
 	color:white;
+	padding-left:10px;
+	padding-right:10px;
 }
 
-nav div #header-left a{
+#header-left{
  
     display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
-	width: 60px;
 	line-height:50px; /* la hauteur de la ligne de texte */
-	
-	text-align:center;
-	text-decoration: none;
-	font-size: 16px;
-	
-	color:white;
+
 }
 
 #grid-container{
 display:grid;
-grid-template-columns:repeat(5,1fr);
+grid-template-columns:repeat(2,auto);
+justify-content:space-between;
 }
 #header-left{
-grid-column:1/2;
+
 }
 #header-right{
-grid-column:3/6;
 display:grid;
-justify-content:end;
-grid-template-columns:repeat(3,110px);
+grid-template-columns:repeat(3,auto);
+grid-gap:10px;
 
 }
 
