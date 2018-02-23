@@ -24,8 +24,8 @@ nav div #header-right a{
 	font-size: 16px;
 	
 	color:white;
-	padding-left:10px;
-	padding-right:10px;
+	margin-left:15px;
+	margin-right:15px;
 }
 
 #header-left{
@@ -46,7 +46,7 @@ justify-content:space-between;
 #header-right{
 display:grid;
 grid-template-columns:repeat(3,auto);
-grid-gap:10px;
+
 
 }
 
@@ -230,7 +230,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans","HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
