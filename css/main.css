@@ -13,10 +13,10 @@ background-color:rgb(55,55,57);
 
 }
 
-nav div a{
+nav div #header-right a{
  
     display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
-	width: 20%;
+	width: 100%;
 	line-height:50px; /* la hauteur de la ligne de texte */
 	
 	text-align:center;
@@ -26,13 +26,41 @@ nav div a{
 	color:white;
 }
 
+nav div #header-left a{
+ 
+    display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
+	width: 60px;
+	line-height:50px; /* la hauteur de la ligne de texte */
+	
+	text-align:center;
+	text-decoration: none;
+	font-size: 16px;
+	
+	color:white;
+}
+
+#grid-container{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+}
+#header-left{
+grid-column:1/2;
+}
+#header-right{
+grid-column:3/6;
+display:grid;
+justify-content:end;
+grid-template-columns:repeat(3,110px);
+
+}
+
 
 #logo{
-
+	
   vertical-align: middle;
   margin-bottom:0.20em;
  /* width:33%; */
-
+	
 }
 
 nav a:hover{
