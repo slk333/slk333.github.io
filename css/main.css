@@ -84,8 +84,9 @@ margin-bottom:10px;
 footer{
 
 background-color:rgb(55,55,57);
-color:white;
+color:WhiteSmoke;
 width:100%;
+
 }
 
 #lowerFooter{
@@ -98,6 +99,11 @@ text-align:center;
 }
 #lowerFooter .container #copyright{
 line-height:40px;
+}
+
+footer a{
+text-decoration:none;
+color:WhiteSmoke;
 }
 
 
