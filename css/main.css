@@ -2,6 +2,7 @@
 body{
 margin:0px;
 
+
 }        
    
 nav{
@@ -75,7 +76,9 @@ height:50px;
 }
 
 article{
-background-color:rgb(249,249,249);
+// background-color:rgb(249,249,249);
+background-image: url("aix.jpg");
+color:white;
 }
 article #mainPhoto{
 margin-top:10px;
