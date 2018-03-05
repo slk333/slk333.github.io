@@ -1,6 +1,8 @@
 
 body{
-margin:0px;}        
+margin:0px;
+
+}        
    
 nav{
 position:fixed;
@@ -72,9 +74,15 @@ nav a:first-child{
 height:50px;
 }
 
+article{
+background-color:rgb(249,249,249);
+}
 article #mainPhoto{
 margin-top:10px;
 margin-bottom:10px;
+padding:20px;
+background-color:white;
+border:solid rgb(203,203,203) 1px;
 
 }
 
@@ -272,7 +280,9 @@ p {
 a {
   color: #1EAEDB; }
 a:hover {
-  color: #0FA0CE; }
+  // color: #0FA0CE; 
+   text-decoration:underline;
+  }
 
 
 /* Buttons
