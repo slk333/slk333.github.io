@@ -55,7 +55,7 @@ grid-template-columns:repeat(3,auto);
 
 
 #logo{
-	
+	height:100px;
   vertical-align: middle;
   margin-bottom:0.20em;
  /* width:33%; */
