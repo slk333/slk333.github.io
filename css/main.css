@@ -336,9 +336,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: rgb(224,42,60);}
 a:hover {
-  // color: #0FA0CE; 
+  // color: rgb(224,42,60); 
    text-decoration:underline;
   }
 
