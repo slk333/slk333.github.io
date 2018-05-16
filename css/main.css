@@ -5,13 +5,19 @@ margin:0px;
 
 }        
    
+#header{
+
+
+}  
+   
+   
 nav{
-position:fixed;
-top:0px;
-left:0px;
-right:0px;
-height:50px;
-z-index:999;
+// position:fixed;
+// top:0px;
+// left:0px;
+// right:0px;
+// z-index:999;
+height:90px;
 background-color:rgb(55,55,57);
 
 }
@@ -20,7 +26,7 @@ nav div #header-right a{
  
     display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
 	width: 100%;
-	line-height:50px; /* la hauteur de la ligne de texte */
+	line-height:90px; /* la hauteur de la ligne de texte */
 	
 	text-align:center;
 	text-decoration: none;
@@ -56,13 +62,13 @@ grid-template-columns:repeat(3,auto);
 
 }
 #header-right a{
-height:50px;
+height:90px;
 
 }
 
 
 #logo{
-	height:100px;
+	height:90px;
   vertical-align: middle;
   margin-bottom:0.20em;
  /* width:33%; */
@@ -78,8 +84,15 @@ nav a:first-child{
 
 }
 
+#lowerHeader{
+height:20px;
+background-color:rgb(224,42,60);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 #roomForNavBar{
-height:50px;
+height:0px;
 }
 
 article{
@@ -89,11 +102,11 @@ article{
 color:black;
 }
 
-article #panoramicPhoto{
+#panoramicPhoto{
 
 height:550px;
 background-image: url("cabinet.jpg");
- background-position:center; 
+background-position:center; 
 background-size:cover;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -590,10 +603,12 @@ there.
 header{
 background-color:rgb(55,55,57);
 }
+#header{
+
+}
 nav{
 
 height:auto;
-z-index:999;
 background-color:rgb(55,55,57);
 
 }
