@@ -9,6 +9,10 @@ margin:0px;
 
 
 }  
+
+.hamburger{
+display:none;
+}
    
    
 nav{
