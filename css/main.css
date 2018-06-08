@@ -1,51 +1,17 @@
-
 body{
 margin:0px;
-
-
-}        
-   
+}           
 #header{
 
-
-}  
-
-.hamburger{
-display:none;
-}
-   
-   
+}   
 nav{
-// position:fixed;
+height:90px;
+background-color:rgb(55,55,57);
+/* position:fixed;
 // top:0px;
 // left:0px;
 // right:0px;
-// z-index:999;
-height:90px;
-background-color:rgb(55,55,57);
-
-}
-
-nav div #header-right a{
- 
-    display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
-	width: 100%;
-	line-height:90px; /* la hauteur de la ligne de texte */
-	
-	text-align:center;
-	text-decoration: none;
-	font-size: 15px;
-	
-	color:white;
-	margin-left:15px;
-	margin-right:15px;
-}
-
-#header-left{
- 
-    display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
-	line-height:50px; /* la hauteur de la ligne de texte */
-
+// z-index:999; */
 }
 
 .grid-container{
@@ -54,38 +20,42 @@ grid-template-columns:repeat(2,auto);
 justify-content:space-between;
 }
 
-article .grid-container{
-grid-gap:60px;
-}
 #header-left{
-
+  /*  display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height
+	line-height:50px; la hauteur de la ligne de texte */
 }
-#header-right{
-display:grid;
-grid-template-columns:repeat(4,auto);
-
-}
-#header-right a{
-height:90px;
-
-}
-
 
 #logo{
 	height:90px;
   vertical-align: middle;
   margin-bottom:0.20em;
  /* width:33%; */
-	
+}
+
+.hamburger{
+display:none;
+}
+
+#header-right{
+display:grid;
+grid-template-columns:repeat(4,auto);
+}
+#header-right a{
+  display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
+	width: 100%;
+	line-height:90px; /* la hauteur de la ligne de texte */
+	text-align:center;
+	text-decoration: none;
+	font-size: 15px;
+	height:90px;
+	color:white;
+	margin-left:15px;
+	margin-right:15px;
 }
 
 nav a:hover{
 background-color:rgb(83,83,85); /* gris plus clair */
 color:white;
-
-}
-nav a:first-child{
-
 }
 
 #lowerHeader{
@@ -94,9 +64,14 @@ background-color:rgb(224,42,60);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 #roomForNavBar{
+/* seulement lorsque on utilise une navbar fixe
 height:0px;
+*/
+}
+
+article .grid-container{
+grid-gap:60px;
 }
 
 article{
@@ -107,14 +82,11 @@ color:black;
 }
 
 #panoramicPhoto{
-
 height:550px;
 background-image: url("cabinet.jpg");
 background-position:center; 
 background-size:cover;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 
 
@@ -192,6 +164,65 @@ footer h5{
 color:rgb(224,42,60);
 margin-bottom:10px;
 }
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+header{
+background-color:rgb(55,55,57);
+}
+#header{
+
+}
+nav{
+
+height:auto;
+background-color:rgb(55,55,57);
+
+}
+header .grid-container{
+display:grid;
+grid-template-columns:1fr;
+background-color:rgb(55,55,57);
+}
+#header-right{
+display:grid;
+grid-template-columns:1fr;
+
+}
+nav div #header-right a{
+text-align:left;
+margin:0px;
+
+}
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+footer .grid-container{
+/* si l'écran est assez grand, mettre 200px entre chaque colonne */
+grid-template-columns:repeat(3,1fr);
+grid-gap:200px;
+justify-content:left;
+}
+}
+
 
 /*
 * Skeleton V2.0.4
@@ -597,60 +628,3 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (max-width: 550px) {
-header{
-background-color:rgb(55,55,57);
-}
-#header{
-
-}
-nav{
-
-height:auto;
-background-color:rgb(55,55,57);
-
-}
-header .grid-container{
-display:grid;
-grid-template-columns:1fr;
-background-color:rgb(55,55,57);
-}
-#header-right{
-display:grid;
-grid-template-columns:1fr;
-
-}
-nav div #header-right a{
-text-align:left;
-margin:0px;
-
-}
-
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-footer .grid-container{
-/* si l'écran est assez grand, mettre 200px entre chaque colonne */
-grid-template-columns:repeat(3,1fr);
-grid-gap:200px;
-justify-content:left;
-}
-}
