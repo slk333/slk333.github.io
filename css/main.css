@@ -1,9 +1,6 @@
 body{
 margin:0px;
 }           
-#header{
-
-}   
 nav{
 height:90px;
 background-color:rgb(55,55,57);
@@ -20,7 +17,7 @@ grid-template-columns:repeat(2,auto);
 justify-content:space-between;
 }
 
-#header-left{
+.header-left{
   /*  display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height
 	line-height:50px; la hauteur de la ligne de texte */
 }
@@ -36,11 +33,11 @@ justify-content:space-between;
 display:none;
 }
 
-#header-right{
+.header-right{
 display:grid;
 grid-template-columns:repeat(4,auto);
 }
-#header-right a{
+.header-right a{
   display: inline-block; /* le lien est inséré dans un bloc, mais sa hauteur reste déterminée par line-height*/
 	width: 100%;
 	line-height:90px; /* la hauteur de la ligne de texte */
@@ -72,6 +69,7 @@ height:0px;
 
 article .grid-container{
 grid-gap:60px;
+
 }
 
 article{
@@ -171,32 +169,38 @@ margin-bottom:10px;
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+
+.hamburger{
+display:inline-block; /* on affiche le hamburger  */
+}
 header{
 background-color:rgb(55,55,57);
 }
-#header{
-
-}
 nav{
-
 height:auto;
 background-color:rgb(55,55,57);
-
 }
 header .grid-container{
 display:grid;
 grid-template-columns:1fr;
 background-color:rgb(55,55,57);
 }
-#header-right{
-display:grid;
-grid-template-columns:1fr;
-
+.header-left{
+display:grid; /* le header de gauche qui contient le hamburger le vire à droite  */
+grid-template-columns:repeat(2,auto); 
+justify-content:space-between;
 }
-nav div #header-right a{
+.header-right{
+display:none; /* Liens masqués en affichage mobile  */
+grid-template-columns:1fr;
+}
+.header-right a{
 text-align:left;
 margin:0px;
+}
+article .grid-container{
+grid-template-columns:1fr;
 
 }
 
