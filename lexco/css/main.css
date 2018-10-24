@@ -59,6 +59,7 @@ grid-template-columns:repeat(4,auto);
 nav a:hover{
 background-color:rgb(83,83,85); /* gris plus clair */
 color:white;
+text-decoration: none;
 }
 
 #lowerHeader{
