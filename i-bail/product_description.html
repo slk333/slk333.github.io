@@ -144,7 +144,7 @@ style: {
   layout: 'vertical',  // horizontal | vertical
   size:   'medium',    // medium | large | responsive
   shape:  'rect',      // pill | rect
-  color:  'gold'       // gold | blue | silver | white | black
+  color:  'blue'       // gold | blue | silver | white | black
 },
 
 // Specify allowed and disallowed funding sources
@@ -155,10 +155,11 @@ style: {
 // - paypal.FUNDING.ELV
 funding: {
   allowed: [
-    paypal.FUNDING.CARD,
-    paypal.FUNDING.CREDIT
+    paypal.FUNDING.CARD
+   
   ],
-  disallowed: []
+  disallowed: [
+   paypal.FUNDING.CREDIT]
 },
 
 // PayPal Client IDs - replace with your own
