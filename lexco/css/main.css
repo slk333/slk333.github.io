@@ -29,6 +29,30 @@ justify-content:space-between;
  /* width:33%; */
 }
 
+#phone{
+  display:inline-block;
+  margin-left:20px;
+  padding:3px 5px 6px 5px;
+
+border: 2px solid white;
+border-radius:10px;
+  
+  
+}
+#phone img{
+  
+  vertical-align: middle;
+}
+#phone a{
+  margin-left:5px;
+  font-size: 1.2em;
+  vertical-align: middle;
+  color:white;
+  text-decoration: none;
+  
+  
+}
+
 .hamburger{
 display:none;
 }
@@ -214,13 +238,17 @@ grid-template-columns:1fr;
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (max-width: 750px) {
+ 
 
 
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
+  #phone{
+    display: none
+  }
 
 }
 
