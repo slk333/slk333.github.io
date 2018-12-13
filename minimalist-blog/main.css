@@ -1,0 +1,30 @@
+html,body,div{
+    /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
+    height:100%;
+}
+
+
+body {
+    /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
+   
+    /* couleur du texte noire atténuée pour éviter trop de contraste */
+    color : rgb(40, 42, 54);
+     /* police à déterminer, choisir sans-serif = arial sur chrome pour éviter times new roman*/
+    font-family : sans-serif; 
+   
+}
+
+.wrapper{
+    /* centrage au milieu de la page */
+    margin: 0 auto;
+    /* empêche une largeur exagérée */
+    max-width: 960px;
+     /* marge intérieure */
+    padding: 0 20px;
+
+
+
+     /* repère visuel (DEBUG ONLY) */
+     border: 1px solid black;
+}
+
