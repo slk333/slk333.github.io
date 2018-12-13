@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 html,body,div{
     /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
     height:100%;
 }
-
 
 body {
     /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
@@ -12,6 +13,18 @@ body {
      /* police à déterminer, choisir sans-serif = arial sur chrome pour éviter times new roman*/
     font-family : sans-serif; 
    
+}
+img{
+    margin: 20px 0px 0px 0px;
+    height: 120px;
+}
+
+
+p{
+     /* style du corps du texte */
+
+    line-height: 1.5;
+    font-family : Merriweather; 
 }
 
 .wrapper{
@@ -24,7 +37,26 @@ body {
 
 
 
-     /* repère visuel (DEBUG ONLY) */
-     border: 1px solid black;
+     /* repère visuel (DEBUG ONLY)
+    border: 1px solid black;  */
+    
 }
+
+ 
+/* style optionnel pour les liens
+a{
+    /* enlever le soulignage */
+    text-decoration:none; 
+    /* enlever la couleur bleue */
+    color:inherit;
+}
+
+a:hover{
+    /* rétablir le soulignage au hover */
+    text-decoration:underline;
+} 
+*/
+
+
+
 
