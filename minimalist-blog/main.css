@@ -7,6 +7,7 @@ html,body{
 }
 
 body {
+   
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
     margin:0px;
 
@@ -49,8 +50,9 @@ li{
 }
 
 .wrapper{
+    
     /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
-    margin: 28px auto;
+    margin: 28px auto 20px auto;
     /* empêche une largeur exagérée du contenu*/
     max-width: 900px;
      /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
@@ -76,6 +78,14 @@ header{
     color:rgb(163, 163, 158);
 
 }
+
+footer{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
 
 /* réglages reservés aux grands écrans */
 @media only screen and (min-width: 900px) {
