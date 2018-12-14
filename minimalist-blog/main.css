@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-html,body,div{
+html,body{
     /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
     height:100%;
 }
@@ -42,7 +42,26 @@ p{
     
 }
 
+header{
+    text-align: center; 
+}
+
+.credit{
+    
+    font-style:italic;
+    color:rgb(163, 163, 158);
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    header{
+        text-align: left;
+        
+    }
  
+   }
+
 /* style optionnel pour les liens
 a{
     /* enlever le soulignage */
@@ -56,6 +75,8 @@ a:hover{
     text-decoration:underline;
 } 
 */
+
+
 
 
 
