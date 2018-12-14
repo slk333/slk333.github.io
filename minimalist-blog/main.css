@@ -43,8 +43,8 @@ ul{
     /* la liste ne doit pas être trop décalée sur la droite sinon elle gâche de l'espace horizontal sur mobile. Par défaut est 40px*/
     padding-left: 20px;
 }
- /* Chaque puce doit être davantage espacée de ses puces voisinnes*/
-li{
+ 
+li{/* Chaque puce doit être davantage espacée de ses puces voisinnes*/
     margin:4px 0px;
 
 }
@@ -80,8 +80,13 @@ header{
 }
 
 footer{
-display: inline-block;
+/* éventuellement renommer en copyright */
+
+/* repousser le footer pour qu'il ne soit pas collé */
 margin-top:20px;
+
+/* sur safari, laisser un peu de blanc après le footer necessite le trick suivant, pour contre les margin collapse */
+display: inline-block;
 margin-bottom: 20px;
 
 }
