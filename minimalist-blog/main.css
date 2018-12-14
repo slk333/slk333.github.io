@@ -20,18 +20,26 @@ img{
 }
 
 
-p{
+p,ul,li{
      /* style du corps du texte */
 
+    font-size: 18px;
     line-height: 1.5;
     font-family : Merriweather; 
+}
+
+ul{
+    margin:24px 0px;
+}
+li{
+    margin:4px 0px;
 }
 
 .wrapper{
     /* centrage au milieu de la page */
     margin: 0 auto;
     /* empêche une largeur exagérée */
-    max-width: 960px;
+    max-width: 900px;
      /* marge intérieure */
     padding: 0 20px;
 
@@ -51,6 +59,10 @@ header{
     font-style:italic;
     color:rgb(163, 163, 158);
 
+}
+
+footer{
+    margin-bottom:60px;
 }
 
 
@@ -75,6 +87,7 @@ a:hover{
     text-decoration:underline;
 } 
 */
+
 
 
 
