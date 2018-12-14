@@ -80,8 +80,10 @@ header{
 }
 
 footer{
-font-size:13px;
+display: inline-block;
 margin-top:20px;
+margin-bottom: 20px;
+
 }
 
 
