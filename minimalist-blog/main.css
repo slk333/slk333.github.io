@@ -1,7 +1,7 @@
  /* obtenir la police directement depuis le fichier CSS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-html,body{
+html{
     /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
     height:100%;
 }
@@ -52,7 +52,7 @@ li{
 .wrapper{
     
     /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
-    margin: 28px auto 20px auto;
+    margin: 28px auto 40px auto;
     /* empêche une largeur exagérée du contenu*/
     max-width: 900px;
      /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
@@ -80,8 +80,8 @@ header{
 }
 
 footer{
-    display: inline-block;
-    margin-bottom: 20px;
+font-size:13px;
+margin-top:20px;
 }
 
 
