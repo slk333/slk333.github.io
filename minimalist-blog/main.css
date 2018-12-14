@@ -1,3 +1,4 @@
+ /* obtenir la police directement depuis le fichier CSS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 html,body{
@@ -6,43 +7,53 @@ html,body{
 }
 
 body {
+    /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
+    margin:0px;
+
+
     /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
-   
+
     /* couleur du texte noire atténuée pour éviter trop de contraste */
     color : rgb(40, 42, 54);
-     /* police à déterminer, choisir sans-serif = arial sur chrome pour éviter times new roman*/
+     /* police à déterminer, on peut choisir sans-serif pour obtenir arial sur chrome et pour éviter times new roman*/
     font-family : sans-serif; 
    
 }
 img{
-    margin: 20px 0px 0px 0px;
+    /* dimensionner l'image */
+    /* étant donné qu'il peut s'agir d'un réglage individuel pour chaque image, on pourrait imaginer d'utiliser un inline style dans le html directement */
     height: 120px;
 }
 
 
 p,ul,li{
      /* style du corps du texte */
-
+     /* 18px car 16px peut être déterminé comme légèrement trop petit */
     font-size: 18px;
+    /* espace vertical entre chaque ligne doit être augmenté, sinon trop sérré */
     line-height: 1.5;
-    font-family : Merriweather; 
+    /* police de corps du text au choix */
+    font-family : Merriweather,serif; 
 }
 
 ul{
+    /* la liste doit être davantage espacée/isolée par rapport aux paragraphes*/
     margin:24px 0px;
+    /* la liste ne doit pas être trop décalée sur la droite sinon elle gâche de l'espace horizontal sur mobile. Par défaut est 40px*/
     padding-left: 20px;
 }
+ /* Chaque puce doit être davantage espacée de ses puces voisinnes*/
 li{
     margin:4px 0px;
 
 }
 
 .wrapper{
-    /* centrage au milieu de la page */
-    margin: 0 auto;
-    /* empêche une largeur exagérée */
+    /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
+    margin: 28px auto;
+    /* empêche une largeur exagérée du contenu*/
     max-width: 900px;
-     /* marge intérieure */
+     /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
     padding: 0 20px;
 
 
@@ -53,23 +64,23 @@ li{
 }
 
 header{
+     /* le header peut être optionnellement centré */
+     /* décider si le logo va être centré également ou non */
+     /* décider si le centrage est pour toutes les tailles ou seulement pour l'affichage mobile */
     text-align: center; 
 }
 
 .credit{
-    
+     /* le crédit (nom de l'auteur et date) peuvent être mis en italique et dans une couleur moins contrastée */
     font-style:italic;
     color:rgb(163, 163, 158);
 
 }
 
-footer{
-    margin-bottom:60px;
-}
-
-
+/* réglages reservés aux grands écrans */
 @media only screen and (min-width: 900px) {
     header{
+        /* le centrage est moins nécessaire lorsque l'écran est très grand */
         text-align: left;
         
     }
