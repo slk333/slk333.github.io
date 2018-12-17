@@ -11,7 +11,7 @@ body {
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
     margin:0px;
 
-
+      
     /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
 
     /* couleur du texte noire atténuée pour éviter trop de contraste */
@@ -20,23 +20,27 @@ body {
     font-family : sans-serif; 
    
 }
-img{
-    /* dimensionner l'image */
-    /* étant donné qu'il peut s'agir d'un réglage individuel pour chaque image, on pourrait imaginer d'utiliser un inline style dans le html directement */
-    height: 120px;
-}
 
 
 p,ul,li{
-     /* style du corps du texte */
+    /* style du corps du texte */
+
+     /* police de corps du text au choix */
+     font-family : Merriweather,serif; 
+
      /* 18px car 16px peut être déterminé comme légèrement trop petit */
-    font-size: 18px;
+     font-size: 18px;
+
     /* espace vertical entre chaque ligne doit être augmenté, sinon trop sérré */
-    line-height: 1.5;
-    /* police de corps du text au choix */
-    font-family : Merriweather,serif; 
+    /* cela dépend de la police utilisée et peut aller de 1.5 à 2 */
+    line-height: 1.7;
+   
 }
 
+p{
+    margin:26px 0px;
+
+}
 ul{
     /* la liste doit être davantage espacée/isolée par rapport aux paragraphes*/
     margin:24px 0px;
@@ -104,21 +108,31 @@ margin-bottom: 20px;
  
    }
 
-/* style optionnel pour les liens
+
+
 a{
     /* enlever le soulignage */
     text-decoration:none; 
-    /* enlever la couleur bleue */
-    color:inherit;
+    /* couleur bleue de google*/
+    color:#1a0dab;
 }
 
 a:hover{
     /* rétablir le soulignage au hover */
     text-decoration:underline;
 } 
-*/
+
+a:visited{
+    /* couleur purple de google*/
+    color:#660099;
+}
 
 
+#logo{
+    /* dimensionner l'image */
+    /* étant donné qu'il peut s'agir d'un réglage individuel pour chaque image, on pourrait imaginer d'utiliser un inline style dans le html directement */
+    height: 120px;
+}
 
 
 
