@@ -126,7 +126,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 article #portrait{
 
-  
+width:180px;
 display:block;
 margin-top:20px;
 margin-bottom:20px;
@@ -138,8 +138,8 @@ margin-right:auto;
 // background-color:white;
 // border:solid rgb(203,203,203) 1px;
 
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:50%;
 }
 
 .description{
@@ -147,6 +147,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 // background-color:rgba(55,55,57,0.5);
 }
 
+#avocatsdiv{
+  background: #EEEEEE;
+  border:solid #DDDDDD 1px;
+  border-radius: 10px;
+  padding:30px;
+}
 
 
 footer{
@@ -285,6 +291,7 @@ grid-template-columns:1fr;
 
   article #portrait{
     margin:0px;
+   
   }
 
   
@@ -336,7 +343,7 @@ justify-content:left;
   
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -595,11 +602,11 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: square inside; }
+  //list-style: square inside; }
 ol {
   list-style: decimal inside; }
 ol, ul {
-  padding-left: 0;
+ // padding-left: 0;
   margin-top: 0; }
 ul ul,
 ul ol,
