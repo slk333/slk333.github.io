@@ -38,21 +38,28 @@ p,ul,li{
 }
 
 pre{
+    /* style du texte préformaté, en particulier le code */
+     /* par défaut, le texte ne va pas retourner à la ligne, puisque par définition, on veut garder le formattage */
+    /* plus petit que le corps de texte normal */
     font-size: 14px;
-  
+    /* une scrollbar apparaît uniquement lorsque c'est nécessaire */
         overflow: auto;
-        word-wrap: normal;
+    /* empêche le mot d'être coupé en deux (contrairement à break-word) */
+        overflow-wrap: normal;
+     /* empêche les espaces d'êtres supprimés (nécessaire pour la tabulation avec espace) */
         white-space: pre;
     
 }
 
 h3{
+     /* si le corps est aggrandi, il faut que les titres soit également aggrandis */
     font-size: 25px;
 }
 
 
 
-p{
+p{  
+    /* l'espacement vertical par défaut des paragraphes n'est pas assez grand. Il faut davantage d'espace*/
     margin:26px 0px;
 
 }
@@ -63,9 +70,9 @@ ul{
     padding-left: 20px;
 }
  
-li{/* Chaque puce doit être davantage espacée de ses puces voisinnes*/
+li{
+    /* Chaque puce doit être davantage espacée de ses puces voisines*/
     margin:4px 0px;
-
 }
 
 .wrapper{
@@ -122,17 +129,18 @@ margin-bottom: 20px;
     }
  
    }
-
+/* réglages reservés aux petits écrans */
    @media only screen and (max-width: 900px) {
     p,ul,li{
     
-         /* 18px car 16px peut être déterminé comme légèrement trop petit */
+         /* 16,5px au lieu de 18px */
          font-size: 16.5px;
     
        
        
     }
     pre{
+        /* 12,5px au lieu de 14px */
         font-size: 12.5px; 
     }
  
@@ -141,7 +149,7 @@ margin-bottom: 20px;
 
 
 a{
-    /* enlever le soulignage */
+    /* enlever le soulignage qui peut faire amateur*/
     text-decoration:none; 
     /* couleur bleue de google*/
     color:#1a0dab;
