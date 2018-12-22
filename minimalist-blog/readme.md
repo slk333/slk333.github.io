@@ -1,15 +1,4 @@
-# H1
-## H2
-### H3
-#### H4
-##### H5
+# A minimalist Blog
+that talks about what I learnt.
 
-### Body
-- header
-- article
-- footer
-
-```
-Hello World!
-```
 
