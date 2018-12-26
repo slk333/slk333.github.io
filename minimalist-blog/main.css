@@ -1,10 +1,18 @@
  /* obtenir la police directement depuis le fichier CSS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-
 html{
     /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
     height:100%;
 }
+svg{
+    width:15px;
+    fill:rgb(179, 179, 177);
+}
+.info{
+font-size: 15px;
+color: rgb(179, 179, 177)
+}
+
 
 body {
    
@@ -50,6 +58,11 @@ pre{
         white-space: pre;
     
 }
+
+button, input, select, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+  }
 
 h3{
      /* si le corps est aggrandi, il faut que les titres soit également aggrandis */
