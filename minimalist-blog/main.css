@@ -5,7 +5,7 @@ html{
     height:100%;
 }
 svg{
-    width:15px;
+    width:14px;
     fill:rgb(179, 179, 177);
     
 }
@@ -16,6 +16,8 @@ color: rgb(179, 179, 177)
 
 
 body {
+     -webkit-animation: bounceInUp 1s;
+
    
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
     margin:0px;
@@ -184,6 +186,19 @@ a:visited{
     /* dimensionner l'image */
     /* étant donné qu'il peut s'agir d'un réglage individuel pour chaque image, on pourrait imaginer d'utiliser un inline style dans le html directement */
     height: 120px;
+   
+
+ 
+    
+    
+}
+
+#logo:hover {
+    -webkit-animation: tada 1s;
+
+  
+   // animation-delay: 2s;
+   
 }
 
 
