@@ -17,6 +17,7 @@ color: rgb(179, 179, 177)
 
 body {
      -webkit-animation: bounceInUp 1s;
+     animation: bounceInUp 1s;
 
    
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
@@ -195,6 +196,7 @@ a:visited{
 
 #logo:hover {
     -webkit-animation: tada 1s;
+    animation: tada 1s;
 
   
    // animation-delay: 2s;
