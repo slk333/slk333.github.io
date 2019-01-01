@@ -21,15 +21,15 @@ body {
 
    
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
-    margin:0px;
+    margin: 0px;
 
       
     /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
 
     /* couleur du texte noire atténuée pour éviter trop de contraste */
-    color : rgb(40, 42, 54);
+    color: rgb(40, 42, 54);
      /* police à déterminer, on peut choisir sans-serif pour obtenir arial sur chrome et pour éviter times new roman*/
-    font-family : sans-serif; 
+    font-family: sans-serif; 
    
 }
 
@@ -47,6 +47,10 @@ p,ul,li{
     /* cela dépend de la police utilisée et peut aller de 1.5 à 2 */
     line-height: 1.7;
    
+}
+
+h1,h2,h3,h4,h5{
+    font-family: sans-serif;
 }
 
 pre{
@@ -91,6 +95,18 @@ li{
     /* Chaque puce doit être davantage espacée de ses puces voisines*/
     margin:4px 0px;
 }
+
+#archives ul, #archives ul li{
+    padding:0px;
+    margin:0px 0px;
+
+ }
+ #archives li{
+    display:inline-block;width:49%
+
+ }
+
+
 
 .wrapper{
     
@@ -152,7 +168,8 @@ margin-bottom: 20px;
     
          /* 16,5px au lieu de 18px */
          font-size: 16.5px;
-    
+        
+
        
        
     }
@@ -161,6 +178,16 @@ margin-bottom: 20px;
         font-size: 12.5px; 
     }
  
+
+    #archives ul li{
+       display:block;
+       width:100%;
+       
+
+    }
+
+
+
    }
 
 
