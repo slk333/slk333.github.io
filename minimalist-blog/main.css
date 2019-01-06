@@ -1,36 +1,58 @@
  /* obtenir la police directement depuis le fichier CSS */
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 html{
     /* empêche qu'il y ait des espaces blancs sans contenu ou contenant */
-    height:100%;
+    /* height:100%; */
 }
-svg{
-    width:14px;
-    fill:rgb(179, 179, 177);
-    
+ /* DEBUG ONLY */
+  /* 
+*{
+    border:1px solid black;
 }
-.info{
-font-size: 15px;
-color: rgb(179, 179, 177)
-}
-
+*/
 
 body {
-   //  -webkit-animation: bounceInUp 1s;
-   //  animation: bounceInUp 1s;
-
-   
+ 
     /* éliminer la marge de 8px par défaut, pour ne pas avoir à la prendre en compte dans les calculs*/
     margin: 0px;
 
-      
     /* style général du site, qui s'applique par défaut à tous les composants, sauf override */
 
     /* couleur du texte noire atténuée pour éviter trop de contraste */
     color: rgb(40, 42, 54);
      /* police à déterminer, on peut choisir sans-serif pour obtenir arial sur chrome et pour éviter times new roman*/
     font-family: sans-serif; 
-   
+}
+
+
+.wrapper{
+    
+    /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
+       /* empêche une largeur exagérée du contenu*/
+       max-width: 900px;
+       /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
+      padding: 0 20px;
+      
+    margin: 28px auto 40px auto;
+ 
+
+
+
+     /* repère visuel (DEBUG ONLY)
+    border: 1px solid black;  */
+    
+}
+
+header{
+     /* le header peut être optionnellement centré */
+     /* décider si le logo va être centré également ou non */
+     /* décider si le centrage est pour toutes les tailles ou seulement pour l'affichage mobile */
+    text-align: center; 
+}
+
+hr{
+    margin:27px 0px;
 }
 
 
@@ -49,8 +71,34 @@ p,ul,li{
    
 }
 
+
+
+p{  
+    /* l'espacement vertical par défaut des paragraphes n'est pas assez grand. Il faut davantage d'espace*/
+    margin:26px 0px;
+
+}
+
+ul{
+    /* la liste doit être davantage espacée/isolée par rapport aux paragraphes*/
+    margin:24px 0px;
+    /* la liste ne doit pas être trop décalée sur la droite sinon elle gâche de l'espace horizontal sur mobile. Par défaut est 40px*/
+    padding-left: 20px;
+}
+ 
+li{
+    /* Chaque puce doit être davantage espacée de ses puces voisines*/
+    margin:4px 0px;
+}
+
+
 h1,h2,h3,h4,h5{
+     /* si les titres sont contenus dans une liste, il faut combattre le style de la liste */
     font-family: sans-serif;
+}
+h3{
+    /* si le corps est supérieur à 16px, on peut vouloir aggrandir aussi les titres de leur valeur par défaut. */
+   font-size: 25px;
 }
 
 pre{
@@ -72,29 +120,9 @@ button, input, select, textarea {
     font-size   : 100%;
   }
 
-h3{
-     /* si le corps est aggrandi, il faut que les titres soit également aggrandis */
-    font-size: 25px;
-}
 
 
 
-p{  
-    /* l'espacement vertical par défaut des paragraphes n'est pas assez grand. Il faut davantage d'espace*/
-    margin:26px 0px;
-
-}
-ul{
-    /* la liste doit être davantage espacée/isolée par rapport aux paragraphes*/
-    margin:24px 0px;
-    /* la liste ne doit pas être trop décalée sur la droite sinon elle gâche de l'espace horizontal sur mobile. Par défaut est 40px*/
-    padding-left: 20px;
-}
- 
-li{
-    /* Chaque puce doit être davantage espacée de ses puces voisines*/
-    margin:4px 0px;
-}
 
 #archives ul, #archives ul li{
     padding:0px;
@@ -121,28 +149,7 @@ li{
 
 
 
-.wrapper{
-    
-    /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
-    margin: 28px auto 40px auto;
-    /* empêche une largeur exagérée du contenu*/
-    max-width: 900px;
-     /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
-    padding: 0 20px;
 
-
-
-     /* repère visuel (DEBUG ONLY)
-    border: 1px solid black;  */
-    
-}
-
-header{
-     /* le header peut être optionnellement centré */
-     /* décider si le logo va être centré également ou non */
-     /* décider si le centrage est pour toutes les tailles ou seulement pour l'affichage mobile */
-    text-align: center; 
-}
 
 .credit{
      /* le crédit (nom de l'auteur et date) peuvent être mis en italique et dans une couleur moins contrastée */
@@ -154,8 +161,10 @@ header{
 footer{
 /* éventuellement renommer en copyright */
 
-/* repousser le footer pour qu'il ne soit pas collé */
+/* repousser le footer pour qu'il ne soit pas collé 
 margin-top:20px;
+*/
+
 
 /* sur safari, laisser un peu de blanc après le footer necessite le trick suivant, pour contre les margin collapse */
 display: inline-block;
@@ -210,7 +219,11 @@ a{
     text-decoration:none; 
     /* couleur bleue de google*/
     color:#1a0dab;
+
+    font-family : Merriweather,serif; 
+
 }
+
 
 a:hover{
     /* rétablir le soulignage au hover */
@@ -243,6 +256,25 @@ a:visited{
    
 }
 
+
+svg{
+    width:14px;
+    fill:rgb(179, 179, 177);
+    
+}
+.info{
+font-size: 15px;
+color: rgb(179, 179, 177)
+}
+
+/* ANIMATION 
+body {
+ 
+     -webkit-animation: bounceInUp 1s;
+     animation: bounceInUp 1s;
+   
+}
+*/
 
 
 
