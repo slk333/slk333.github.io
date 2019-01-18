@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/hello-gatsby-built/app.698475251cb3604da5af.css">@import url(https://fonts.googleapis.com/css?family=Merriweather);body{margin:0;color:#282a36;font-family:sans-serif}header{text-align:center}hr{margin:27px 0}li,p,ul{font-family:Merriweather,serif;font-size:18px;line-height:1.7}p{margin:26px 0}ul{margin:24px 0;padding-left:20px}li{margin:4px 0}h1,h2,h3,h4,h5{font-family:sans-serif}h3{font-size:25px}pre{font-size:14px;overflow:auto;overflow-wrap:normal;white-space:pre}button,input,select,textarea{font-family:inherit;font-size:100%}#archives ul,#archives ul li{padding:0;margin:0}#archives li{display:inline-block;width:49%}#archives h2{font-size:24px}#archives a{font-family:sans-serif;font-size:16px}.credit{font-style:italic;color:#a3a39e}footer{display:inline-block;margin-bottom:20px}@media only screen and (min-width:900px){header{text-align:left}}@media only screen and (max-width:900px){li,p,ul{font-size:16.5px}pre{font-size:12.5px}#archives ul li{display:block;width:100%}}a{text-decoration:none;color:#1a0dab;font-family:Merriweather,serif}a:hover{text-decoration:underline}a:visited{color:#609}#logo{height:120px}#logo:hover{-webkit-animation:tada 1s;animation:tada 1s;//:2s}svg{width:14px;fill:#b3b3b1}.info{font-size:15px;color:#b3b3b1}</style><style data-href="/hello-gatsby-built/component---src-templates-blog-post-js.9d9580a9af6a8611cbd8.css">.container-module--container--3C57J{max-width:900px;padding:0 20px;margin:28px auto 40px}</style><meta name="generator" content="Gatsby 2.0.76"/><link as="script" rel="preload" href="/hello-gatsby-built/component---src-templates-blog-post-js-e2deba4f41da314e6c4e.js"/><link as="script" rel="preload" href="/hello-gatsby-built/app-c3f90967f2c46e7f1d89.js"/><link as="script" rel="preload" href="/hello-gatsby-built/webpack-runtime-9c2bbe34b346c4f4cb83.js"/><link as="fetch" rel="preload" href="/hello-gatsby-built/static/d/162/path---embedding-code-in-html-614-45a-lFxVS7KgFd4DrhNgIpElMxX4Lfs.json" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="container-module--container--3C57J"><header><a href="../index.html"><img src="../logo.svg" alt="logo" id="logo"/></a><h1>Embedding code in html</h1><div class="credit"><p>Written by Antoine - December 18th, 2018</p></div></header><div><p>If you want to embed some code in your article, and want it to look nice, there is a simple and quick way to do it. You can use <strong>Prettify</strong> by Google.</p>
+<p>Take this piece of Swift code for exemple:</p>
+<pre style="border:1px solid black">
+    let myName = "Aweb"
+    print("Hello \(myName)")
+    // prints "Hello Aweb"
+        </pre>
+<p>Just embed your code in a <strong><pre></strong> tag, and use the relevant prettify class:</p>
+<pre class="prettyprint lang-html">
+    <pre class="prettyprint lang-swift">
+    ..
+    let myName = "Aweb"
+    print("Hello \(myName)")
+    // prints "Hello Aweb
+    ..
+    </pre>
+<pre><code>&#x3C;/pre>
+</code></pre>
+<p>This will render like that:</p>
+<pre class="prettyprint lang-swift">
+    let myName = "Aweb"
+    print("Hello \(myName)")
+    // prints "Hello Aweb"
+    </pre>
+<p>Don't forget to include Prettify at the end of the body, including or not languages plugins:</p>
+<pre class="prettyprint lang-html">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<pre><code>&#x3C;script src="https://cdn.rawgit.com/google/code-prettify/master/src/lang-swift.js">&#x3C;/script>
+&#x3C;/pre>
+</code></pre>
+<p>And lastly you can pick a custom theme. For example, I'm using a dark mode theme, called "Desert":</p>
+<pre class="prettyprint lang-html">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
+    </pre>
+<h3>HTML</h3>
+<p>Embedding HTML is annoying because you cannot just type html code inside the <strong><pre></strong> tag. The raw html code would be interpreted as html and rendered differently that what you want. To fix that, you need to use an online <a href="https://mothereff.in/html-entities">HTML entity encoder/decoder</a></p>
+<p>So, in order to get:</p>
+<pre class="prettyprint lang-html">
+    <p style="color:beige">
+
+        Embedding code in HTML
+
+    </p>
+      </pre>
+<p>You actually need to provide the encoded version:</p>
+<pre style="border:1px solid black">
+    <pre class="prettyprint lang-html">
+
+    &#x3C;p style=&#x22;color:beige&#x22;&#x3E;
+
+        Embedding code in HTML
+
+    &#x3C;/p&#x3E;
+    </pre>
+<pre><code>&#x3C;/pre>
+</code></pre>
+<h3>Conclusion</h3>
+<p>So all in all, it's pretty cumbersome to write html snippets, even if you use an online encoder/decoder. For other languages like Swift, it remains reasonnably easy to stylise them.</p></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"embedding-code-in-html-614","path":"/Embedding-code-in-html/"};window.dataPath="162/path---embedding-code-in-html-614-45a-lFxVS7KgFd4DrhNgIpElMxX4Lfs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.698475251cb3604da5af.css","/app-c3f90967f2c46e7f1d89.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.9d9580a9af6a8611cbd8.css","/component---src-templates-blog-post-js-e2deba4f41da314e6c4e.js"],"component---src-pages-index-js":["/component---src-pages-index-js.9d9580a9af6a8611cbd8.css","/component---src-pages-index-js-09d768d8e6c7014b7bde.js"],"pages-manifest":["/pages-manifest-0c28b473a3e2e73eff8f.js"]};/*]]>*/</script><script src="/hello-gatsby-built/webpack-runtime-9c2bbe34b346c4f4cb83.js" async=""></script><script src="/hello-gatsby-built/app-c3f90967f2c46e7f1d89.js" async=""></script><script src="/hello-gatsby-built/component---src-templates-blog-post-js-e2deba4f41da314e6c4e.js" async=""></script></body></html>
