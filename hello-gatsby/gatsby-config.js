@@ -1,5 +1,5 @@
 module.exports = {
-  
+  pathPrefix: "/hello-gatsby-built",
     siteMetadata: {
       title: `slk333|Awew33`,
     },
