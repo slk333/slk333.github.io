@@ -10,7 +10,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
