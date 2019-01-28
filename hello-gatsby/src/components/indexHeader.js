@@ -4,11 +4,12 @@ export default (props) => (
 
 
     <div>
-        {/*Header*/}
-    {/*Logo*/}
+      
+    {/*Blog Logo*/}
     <a href="../index.html"><img src="../logo.svg" alt="logo" id="logo" /></a>
-    {/*Title*/}
-    <h1 style={{letterSpacing: '1px', marginBottom: '0px'}}>slk333|Awew33 </h1>
+    {/*Blog Title*/}
+    <h1 style={{letterSpacing: '1px', marginBottom: '0px'}}>slk333|Awew33 🛫</h1>
+   <p>A blog about what I find out... Also a good excuse to practice my skills.</p>
         
     </div>
 

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Container from "../components/container"
 import ArticleHeader from "../components/articleHeader"
+import Footer from "../components/footer"
 
 
 
@@ -14,7 +15,8 @@ export default ({ data }) => {
 
      
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      
+      <hr/>
+      <Footer/>
     </Container>
 
   )
