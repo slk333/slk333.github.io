@@ -152,6 +152,7 @@
  
  /* sur safari, laisser un peu de blanc après le footer necessite le trick suivant, pour contre les margin collapse */
  display: inline-block;
+ width:100%;
  margin-bottom: 20px;
  
  }

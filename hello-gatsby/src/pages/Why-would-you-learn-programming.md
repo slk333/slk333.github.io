@@ -1,9 +1,9 @@
 ---
-title: "Use Gatsby"
+title: "Why Would You Learn Programming"
 date: "2018-01-18"
 ---
 
-One of the best way to put it is: "To be able to talk to the computer". But it's more than that. It's more like to use the computer as an extension of your brain, just like we use the machines to extend our body limited capabilities. So what does a computer have to offer that we don't have already ?
+So you can talk to the computer. But it's more than that. It's more like to use the computer as an extension of your brain, just like we use the machines to extend our body limited capabilities. So what does a computer have to offer that we don't have already ?
 
 Relatively to our brain, a computer has:
 

@@ -1,9 +1,10 @@
 module.exports = {
-  pathPrefix: "/hello-gatsby-built",
+  pathPrefix: "/hello-gatsby",
     siteMetadata: {
       title: `slk333|Awew33`,
     },
     plugins: [
+      `gatsby-plugin-twitter`,
         `gatsby-transformer-remark`,
 
         {
