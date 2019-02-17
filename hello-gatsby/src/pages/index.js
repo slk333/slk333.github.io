@@ -9,9 +9,9 @@ import { Link, graphql } from "gatsby";
 
 export default ({ data }) => (
   <div>
-    <title> {data.site.siteMetadata.title}</title>
+    <title>{data.site.siteMetadata.title}</title>
     <meta name="description" content="A minimalist blog" />
-    {/*feuille de style*/}
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
