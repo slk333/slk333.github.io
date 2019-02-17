@@ -11,7 +11,7 @@ export default (props) => (
    
     <div class="credit">
         <p>
-            Written by Antoine - January 29th, 2019
+            Written by Antoine - {props.date}
         </p>
     </div>
 </header>

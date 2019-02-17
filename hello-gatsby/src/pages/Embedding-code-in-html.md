@@ -1,6 +1,6 @@
 ---
 title: "Embedding code in html"
-date: "2018-01-18"
+date: "2018-12-23"
 ---
 
 If you want to embed some code in your article, and want it to look nice, there is a simple and quick way to do it. You can use **Prettify** by Google.

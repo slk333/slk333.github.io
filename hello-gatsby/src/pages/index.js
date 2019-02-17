@@ -9,7 +9,7 @@ import { Link, graphql } from "gatsby";
 
 export default ({ data }) => (
   <div>
-    <title>Minimalist Blog</title>
+    <title> {data.site.siteMetadata.title}</title>
     <meta name="description" content="A minimalist blog" />
     {/*feuille de style*/}
     <link
@@ -62,6 +62,14 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
+    site {
+  
+      siteMetadata {
+        title
+        
+      }
+    }
+
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {

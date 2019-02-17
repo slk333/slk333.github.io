@@ -2,7 +2,7 @@ import React from "react";
 import IndexHeader from "../components/indexHeader";
 import Footer from "../components/footer";
 import Container from "../components/container";
-import { Link, graphql } from "gatsby";
+// import { Link, graphql } from "gatsby";
 
 export default ({ data }) => (
   <div>

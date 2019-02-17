@@ -1,6 +1,6 @@
 ---
 title: "Write posts with Markdown"
-date: "2018-01-18"
+date: "2018-12-18"
 ---
 
 The problem: It's cumbersome to write html by hand. When you write a blog post, you want to focus on what you write, and not on what html tag you will use here and what css class you will use there.
