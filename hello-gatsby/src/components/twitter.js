@@ -8,7 +8,7 @@ export default () => (
         class="twitter-follow-button"
         data-show-count="true"
       >
-        Follow @antoineweber
+        @antoineweber
       </a>
     </div>
 

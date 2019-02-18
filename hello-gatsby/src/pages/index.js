@@ -11,7 +11,7 @@ export default ({ data }) => (
   <div>
     <title>{data.site.siteMetadata.title}</title>
     <meta name="description" content="A minimalist blog" />
-   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
@@ -20,10 +20,9 @@ export default ({ data }) => (
     <Container>
       <IndexHeader />
       <hr />
-      
+
       <Latests>
-      
-        {data.allMarkdownRemark.edges.slice(0,2).map(({ node }) => (
+        {data.allMarkdownRemark.edges.slice(0, 2).map(({ node }) => (
           <div key={node.id}>
             <ArticleDescription
               title={node.frontmatter.title}
@@ -35,27 +34,21 @@ export default ({ data }) => (
       </Latests>
       <hr />
       <Archives>
-      
         {data.allMarkdownRemark.edges.slice(2).map(({ node }) => (
-       <li>
-          <div key={node.id}>
-            <ArticleDescription
-              title={node.frontmatter.title}
-              hook={node.excerpt}
-            />
-            <Link to={node.fields.slug}>Continue Reading</Link>
-          </div>
+          <li>
+            <div key={node.id}>
+              <ArticleDescription
+                title={node.frontmatter.title}
+                hook={node.excerpt}
+              />
+              <Link to={node.fields.slug}>Continue Reading</Link>
+            </div>
           </li>
         ))}
-
       </Archives>
-
 
       <hr />
       <Footer />
-
-    
-      
     </Container>
   </div>
 );
@@ -63,10 +56,8 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     site {
-  
       siteMetadata {
         title
-        
       }
     }
 

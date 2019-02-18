@@ -1,21 +1,22 @@
 import React from "react";
-import IndexHeader from "../components/indexHeader";
+import Logo from "../components/logo";
 import Footer from "../components/footer";
 import Container from "../components/container";
 // import { Link, graphql } from "gatsby";
 
 export default ({ data }) => (
   <div>
-    <title>Minimalist Blog</title>
+    <title>About - slk333|Awew33</title>
     <meta name="description" content="A minimalist blog" />
     {/*feuille de style*/}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
+    
 
     <Container>
-      <IndexHeader />
+    <Logo/>
       <hr />
       <h2>About me</h2>
       <p>Hey, my name is Antoine W. and I'm from France. Here's what I do:</p>
