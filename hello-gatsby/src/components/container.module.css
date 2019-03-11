@@ -1,17 +1,12 @@
-.container{
-     
-    /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
-       /* empêche une largeur exagérée du contenu*/
-       max-width: 900px;
-       /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
-      padding: 0 20px;
-      
-    margin: 28px auto 40px auto;
- 
+.container {
+  /* délimitation du contenu dans une zone centrale de la page, afin que tout le contenu ne soit pas seulement d'un côté */
+  /* empêche une largeur exagérée du contenu*/
+  max-width: 900px;
+  /* marge intérieure pour quel le contenu ne colle pas aux bords lorsqu'on est en mobile */
+  padding: 0 20px;
 
+  margin: 28px auto 40px auto;
 
-
-     /* repère visuel (DEBUG ONLY)
+  /* repère visuel (DEBUG ONLY)
     border: 1px solid black;  */
-    
 }

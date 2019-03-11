@@ -6,7 +6,7 @@ export default () => (
       <a
         href="https://twitter.com/antoineweber?ref_src=twsrc%5Etfw"
         class="twitter-follow-button"
-        data-show-count="true"
+        data-show-count="false"
       >
         @antoineweber
       </a>

@@ -5,8 +5,6 @@ import { Link } from "gatsby";
 export default props => (
   <footer>
     <div className="spaceBetween">
-      
-     
       <div>
         {/*About Page*/}
         <Link to="./">Home</Link> - <Link to="./about/">About me</Link>
@@ -15,8 +13,8 @@ export default props => (
       <div>Copyright 2019 Antoine Weber</div>
     </div>
     <div>
-    <br />
-      
+      <br />
+
       <Twitter />
     </div>
   </footer>
