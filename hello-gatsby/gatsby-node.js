@@ -15,6 +15,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+
+
+ 
+  createPage({
+    path: "/test333",
+    component: path.resolve(`./src/templates/empty-page.js`),
+    context: {
+     id:"333"
+    },
+  })
+
+
+
   return graphql(`
     {
       allMarkdownRemark {

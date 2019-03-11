@@ -13,13 +13,13 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.0.76",
-    "gatsby-cli": "^2.4.10",
-    "gatsby-plugin-twitter": "^2.0.8",
-    "gatsby-source-filesystem": "^2.0.20",
-    "gatsby-transformer-remark": "^2.2.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "gatsby": "^2.1.30",
+    "gatsby-cli": "^2.4.15",
+    "gatsby-plugin-twitter": "^2.0.12",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-remark": "^2.3.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "repository": {
     "type": "git",
