@@ -1,8 +1,8 @@
 import React from "react";
-import IndexHeader from "../components/indexHeader";
-import Latests from "../components/latests";
-import ArticleDescription from "../components/articleDescription";
-import Archives from "../components/archives";
+import IndexHeader from "../components/homepage/indexHeader";
+import Latests from "../components/homepage/latests";
+import ArticleDescription from "../components/homepage/articleDescription";
+import Archives from "../components/homepage/archives";
 import Footer from "../components/footer";
 import Container from "../components/container";
 import { Link, graphql } from "gatsby";

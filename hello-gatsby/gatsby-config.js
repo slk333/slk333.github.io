@@ -13,6 +13,12 @@ module.exports = {
         name: `src`,
         path: `${__dirname}/src/`
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ]
 };
